@@ -1,0 +1,39 @@
+program: train.py
+method: grid
+metric:
+  name: val_loss
+  goal: minimize
+parameters:
+  lr:
+    values: [0.1, 0.05, 0.01, 0.005, 0.001, 0.0005, 0.0001]
+  optimizer:
+    values: ["sgd", "adam", "adadelta"]
+  num_neurons:
+    values: [10, 50, 100, 200, 500]
+  num_hidden:
+    values: [0, 1, 3, 5, 10]
+  init_method:
+    values: ['normal', 'xavier', 'kaiming']
+  activation:
+    values: ['ELU', 'LeakyReLU', 'Tanh']
+  dropout_prob:
+    values: [0.0, 0.3, 0.5, 0.8]
+  data_type: 
+    values: [
+      'All', 'Demographics', 'ICD', 'INP_MED', 'OUT_MED', 'LABS', 'Vitals', 
+      'Vision', 'JointAll', 'JointSeparate'
+    ]
+  batch_size:
+    value: 256
+  num_workers:
+    value: 16 
+  deterministic:
+    value: True
+  distributed_backend:
+    value: 'dp'
+  gpus: 
+    value: 2
+  min_epochs:
+    value: 0
+  max_epochs:
+    value: 10

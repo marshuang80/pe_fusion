@@ -1,0 +1,1 @@
+python test.py --checkpoint_path /home/marshuang80/git/pe_fusion/ckpt/JointAll_sgd_ELU_normal_10_0_0.0/epoch=0.ckpt

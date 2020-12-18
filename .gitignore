@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# wandb logs
+wandb/
+
+# logs
+ckpt/
+results/
+lightning_logs/

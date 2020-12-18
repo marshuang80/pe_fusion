@@ -1,0 +1,15 @@
+python train.py --lr 0.1 \
+                --optimizer sgd \
+                --num_neurons 10 \
+                --num_hidden 0 \
+                --init_method normal \
+                --activation ELU \
+                --dropout_prob 0.0 \
+                --data_type JointAll \
+                --batch_size 256 \
+                --num_workers 0 \
+                --deterministic True \
+                --distributed_backend dp \
+                --gpus 2 \
+                --min_epochs 0 \
+                --max_epochs 10
