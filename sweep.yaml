@@ -36,4 +36,4 @@ parameters:
   min_epochs:
     value: 0
   max_epochs:
-    value: 10
+    value: 200

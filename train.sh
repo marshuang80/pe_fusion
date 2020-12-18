@@ -12,4 +12,4 @@ python train.py --lr 0.1 \
                 --distributed_backend dp \
                 --gpus 2 \
                 --min_epochs 0 \
-                --max_epochs 10
+                --max_epochs 200
