@@ -11,7 +11,7 @@ Recent advancements in deep learning have led to a resurgence of medical imaging
 
 In this study, we separately trained an imaging-only model [PENet](https://rdcu.be/b3Lll) and 7 EMR-only neural network models for each modality. These single modality models not only serve as baselines for performance comparison, they also provide different inputs and components for different fusion models. A total of 7 fusion architectures were implemented and compared:
 
-![](./img/fusion_architectures.tiff)
+![](./img/fusion_architectures.png)
 
 ## Results
 
